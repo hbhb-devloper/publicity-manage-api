@@ -9,4 +9,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface MaterialsApi {
     @GetMapping("/count")
     Long countNotice(@RequestParam("id") Integer id);
+
+
+    @GetMapping("/budget-year")
+    void saveBudget();
 }
